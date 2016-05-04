@@ -4,8 +4,10 @@ window.onload = function () {
     $('div.task div > h1').text('Заменил все заголовоки h1')
 
 // 2. Установить всем input type="text" произвольное содержимое. Содержимое второго инпута должно отличаться от первого.
-    $('div.task input[type="text"]').eq(0).attr('value','Установил значение Первого инпута')
-    $('div.task input[type="text"]').eq(1).attr('value','Установил значение Второго инпута')
+    // $('div.task input[type="text"]').eq(0).attr('value','Установил значение Первого инпута')
+    // $('div.task input[type="text"]').eq(1).attr('value','Установил значение Второго инпута')
+    $('div.task input[type="text"]').eq(0).val('Установил значение Первого инпута')
+    $('div.task input[type="text"]').eq(1).val('Установил значение Второго инпута')
     // А можно ещё таким образом
     // $('div.task input[type="text"]:first').attr('value','Установил значение Первого инпута')
     // $('div.task input[type="text"]:first').next().next().attr('value','Установил значение Второго инпута')
@@ -13,7 +15,8 @@ window.onload = function () {
 // 3. Выведите значение option с value=2
     var textOption_val2 = $('#myselect option[value="2"]').text()
     // Выбираем в списке значение option с value=2
-    $('#myselect option[value="2"]').attr('selected','selected')
+    // $('#myselect option[value="2"]').attr('selected','selected')
+    $('#myselect option[value="2"]').prop('selected',true)
     // Получаем и выводим значение option с value=2
     textOption_val2 = '<p>' + textOption_val2 + '</p>'
     $('#myselect').after(textOption_val2)
