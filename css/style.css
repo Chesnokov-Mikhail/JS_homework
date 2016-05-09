@@ -7,20 +7,69 @@ body {
   height: 100%;
 }
 .container {
+  width: 1300px;
   min-height: 100%;
-  width: 1366px;
   margin: 0 auto;
 }
-.container .task {
-  margin: 30px 0 0 0;
+.container .menu {
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 25px;
 }
-.container .red {
-  padding: 5px 0px 0px 5px;
-  color: red;
+.container .menu .menu_label .label_active {
+  border-width: 1px 1px 0px 1px;
+  border-style: solid;
+  border-color: #D4D4D4;
+  position: relative;
+  z-index: 3;
+  padding-bottom: 1px;
+  background-color: #eeeeee;
 }
-.container .bold {
-  font-weight: bold;
+.container .menu .menu_label li {
+  width: 110px;
+  height: 24px;
+  float: left;
+  position: relative;
+  z-index: 1;
+  margin-right: 2px;
+  line-height: 20px;
+  list-style: none;
+  font-size: 10px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px 1px 0px 1px;
+  border-color: #D4E4E4;
+  padding-bottom: 1px;
+  background-color: #f3f8f8;
 }
-.container .left_padding_20 {
-  padding: 0px 0px 0px 20px;
+.container .menu .menu_label .label_passive {
+  cursor: pointer;
+}
+.container .menu .menu_label .label_passive:hover {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #FFCA95;
+  background-color: #ffe4c8;
+}
+.container .menu .menu_label .label_focus {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #FFCA95;
+  background-color: #ffe4c8;
+}
+.container .context_menu {
+  width: 484px;
+  margin-left: 10px;
+  font-size: 10px;
+}
+.container .context_menu .context_active {
+  position: relative;
+  z-index: 2;
+  background-color: #eeeeee;
+  border: solid 1px #D4D4D4;
+  padding: 5px;
+}
+.container .context_menu div {
+  background-color: #f3f8f8;
+  display: none;
 }
