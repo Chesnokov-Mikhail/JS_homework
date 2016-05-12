@@ -1,0 +1,26 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body {
+  height: 100%;
+}
+.container {
+  min-height: 100%;
+  width: 1366px;
+  margin: 0 auto;
+}
+.container .task {
+  margin: 30px 0 0 0;
+}
+.container .red {
+  padding: 5px 0px 0px 5px;
+  color: red;
+}
+.container .bold {
+  font-weight: bold;
+}
+.container .left_padding_20 {
+  padding: 0px 0px 0px 20px;
+}
