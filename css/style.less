@@ -1,13 +1,5 @@
 @size_width:1300px;
-@active_border_color: #D4D4D4;
-@active_background_color: lighten(@active_border_color,10%);
-@pasive_border_color: #D4E4E4;
-@pasive_background_color: lighten(@pasive_border_color,10%);
-@width_cell_menu: 110px;
-@height_cell_menu: 24px;
-@size_font_menu: 10px;
-@pasive_border_hover_color:#FFCA95;
-@pasive_background_hover_color: lighten(@pasive_border_hover_color,10%);
+@size_width_forma: @size_width / 3;
 
 * {
   margin: 0px;
@@ -18,74 +10,36 @@ html,
 body {
   height: 100%;
 }
-
 .container {
   width: @size_width;
   min-height: 100%;
   margin: 0 auto;
-  .menu {
-    margin-top: 10px;
-    margin-left: 10px;
-    height: @height_cell_menu + 1px;
-    .menu_label {
-      .label_active {
-        border-width: 1px 1px 0px 1px;
-        border-style: solid;
-        border-color: @active_border_color;
-        position: relative;
-        z-index: 3;
-        padding-bottom: 1px;
-        background-color: @active_background_color;
+  ol {
+    margin-left: 20px;
+  }
+  .cont_forma {
+    width: @size_width_forma;
+    #form_reg {
+      margin: 5px;
+      line-height: 1.5em;
+      .error_input {
+        box-shadow: 0px 0px 1em 0px red inset;
       }
-      li {
-        width: @width_cell_menu;
-        height: @height_cell_menu;
-        float: left;
-        position: relative;
-        z-index: 1;
-        margin-right: 2px;
-        line-height: @size_font_menu*2;
-        list-style: none;
-        font-size: @size_font_menu;
-        text-align: center;
-        border-style: solid;
-        border-width: 1px 1px 0px 1px;
-        border-color: @pasive_border_color;
-        padding-bottom: 1px;
-        background-color: @pasive_background_color;
+      label {
+        padding-left: 10px;
+        input {
+          padding-left: 5px;
+        }
+        textarea {
+          width: @size_width_forma - 40px;
+        }
       }
-      .label_passive {
+      #reg_button {
+        margin: 5px 10px;
+      }
+      #reg_button:hover {
         cursor: pointer;
       }
-      .label_passive:hover {
-        border-style: solid;
-        border-width: 1px;
-        border-color: @pasive_border_hover_color;
-        background-color: @pasive_background_hover_color;
-      }
-      .label_focus {
-        border-style: solid;
-        border-width: 1px;
-        border-color: @pasive_border_hover_color;
-        background-color: @pasive_background_hover_color;
-      }
-    }
-  }
-  .context_menu {
-    width: @width_cell_menu * 4.4;
-    margin-left: 10px;
-    font-size: @size_font_menu;
-    .context_active {
-      position: relative;
-      z-index: 2;
-      //      display: block;
-      background-color: @active_background_color;
-      border: solid 1px @active_border_color;
-      padding: 5px;
-    }
-    div {
-      background-color: @pasive_background_color;
-      display: none;
     }
   }
 }
