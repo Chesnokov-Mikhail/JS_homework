@@ -1,0 +1,35 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body {
+  height: 100%;
+}
+.container {
+  width: 1300px;
+  min-height: 100%;
+  margin: 0 auto;
+}
+.container .cont_forma {
+  width: 433.33333333px;
+}
+.container .cont_forma #form_reg {
+  margin: 5px;
+  line-height: 1.5em;
+}
+.container .cont_forma #form_reg label {
+  padding-left: 10px;
+}
+.container .cont_forma #form_reg label input {
+  padding-left: 5px;
+}
+.container .cont_forma #form_reg label textarea {
+  width: 393.33333333px;
+}
+.container .cont_forma #form_reg #reg_button {
+  margin: 5px 10px;
+}
+.container .cont_forma #form_reg #reg_button:hover {
+  cursor: pointer;
+}
