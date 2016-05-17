@@ -11,65 +11,25 @@ body {
   min-height: 100%;
   margin: 0 auto;
 }
-.container .menu {
-  margin-top: 10px;
-  margin-left: 10px;
-  height: 25px;
+.container .cont_forma {
+  width: 433.33333333px;
 }
-.container .menu .menu_label .label_active {
-  border-width: 1px 1px 0px 1px;
-  border-style: solid;
-  border-color: #D4D4D4;
-  position: relative;
-  z-index: 3;
-  padding-bottom: 1px;
-  background-color: #eeeeee;
+.container .cont_forma #form_reg {
+  margin: 5px;
+  line-height: 1.5em;
 }
-.container .menu .menu_label li {
-  width: 110px;
-  height: 24px;
-  float: left;
-  position: relative;
-  z-index: 1;
-  margin-right: 2px;
-  line-height: 20px;
-  list-style: none;
-  font-size: 10px;
-  text-align: center;
-  border-style: solid;
-  border-width: 1px 1px 0px 1px;
-  border-color: #D4E4E4;
-  padding-bottom: 1px;
-  background-color: #f3f8f8;
+.container .cont_forma #form_reg label {
+  padding-left: 10px;
 }
-.container .menu .menu_label .label_passive {
+.container .cont_forma #form_reg label input {
+  padding-left: 5px;
+}
+.container .cont_forma #form_reg label textarea {
+  width: 393.33333333px;
+}
+.container .cont_forma #form_reg #reg_button {
+  margin: 5px 10px;
+}
+.container .cont_forma #form_reg #reg_button:hover {
   cursor: pointer;
-}
-.container .menu .menu_label .label_passive:hover {
-  border-style: solid;
-  border-width: 1px;
-  border-color: #FFCA95;
-  background-color: #ffe4c8;
-}
-.container .menu .menu_label .label_focus {
-  border-style: solid;
-  border-width: 1px;
-  border-color: #FFCA95;
-  background-color: #ffe4c8;
-}
-.container .context_menu {
-  width: 484px;
-  margin-left: 10px;
-  font-size: 10px;
-}
-.container .context_menu .context_active {
-  position: relative;
-  z-index: 2;
-  background-color: #eeeeee;
-  border: solid 1px #D4D4D4;
-  padding: 5px;
-}
-.container .context_menu div {
-  background-color: #f3f8f8;
-  display: none;
 }
