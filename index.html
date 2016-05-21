@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <title>Домашнее задание Чеснокова Михаила. Урок №6.</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="jquery-ui.min.css" rel="stylesheet" type="text/css">
     <script src="jquery-2.2.3.min.js" type="text/javascript" language="JavaScript"></script>
+    <script src="jquery-ui.min.js" type="text/javascript" language="JavaScript"></script>
     <script src="script.js" type="text/javascript" language="JavaScript"></script>
 </head>
 <body>
@@ -30,8 +32,13 @@
                     <br>
                     <label>
                         Пол:
-                        М <input type="radio" name="gender" value='m'>
+                        М <input type="radio" name="gender" value='m' checked>
                         Ж <input type="radio" name="gender" value='f'>
+                    </label>
+                    <br>
+                    <label>
+                        Дата рождения:
+                        <input type="text" pattern="\d{4}-\d{2}-\d{2}" placeholder="YYYY-MM-DD" name="birth"></input>
                     </label>
                     <br>
                     <label>
@@ -47,6 +54,12 @@
                     <input type="submit" id="reg_button" value="Отправить" title="Отправить данные формы">
                 </fieldset>
             </form>
+            <p class="text_form">
+                Процент заполнения формы:
+            </p>
+            <div id="progressbar">
+                <div class="progress-label"></div>
+            </div>
         </div>
         <div class="cont_response">
         </div>

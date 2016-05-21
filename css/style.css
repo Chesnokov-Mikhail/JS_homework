@@ -11,11 +11,21 @@ body {
   min-height: 100%;
   margin: 0 auto;
 }
-.container ol {
+.container .cont_response ol {
   margin-left: 20px;
 }
 .container .cont_forma {
   width: 433.33333333px;
+}
+.container .cont_forma #progressbar {
+  margin: 0px 5px;
+  text-align: center;
+  line-height: 2em;
+}
+.container .cont_forma #progressbar .progress-label {
+  background-color: white;
+  text-shadow: 1px 1px 0 #fff;
+  font-weight: bold;
 }
 .container .cont_forma #form_reg {
   margin: 5px;
