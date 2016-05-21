@@ -14,11 +14,21 @@ body {
   width: @size_width;
   min-height: 100%;
   margin: 0 auto;
-  ol {
+  .cont_response ol {
     margin-left: 20px;
   }
   .cont_forma {
     width: @size_width_forma;
+    #progressbar {
+      margin: 0px 5px;
+      text-align: center;
+      line-height: 2em;
+      .progress-label {
+        background-color: white;
+        text-shadow: 1px 1px 0 #fff;
+        font-weight: bold;
+      }
+    }
     #form_reg {
       margin: 5px;
       line-height: 1.5em;
